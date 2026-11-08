@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pong-chaos-edition"
+version = "1.0.0"
+description = "A chaotic retro Pong game built with Pygame"
+requires-python = ">=3.8"
+dependencies = ["pygame>=2.0,<3.0"]
+
+[project.scripts]
+pong-chaos = "pong_chaos.app:main"
+
+[tool.setuptools.packages.find]
+include = ["pong_chaos*"]
